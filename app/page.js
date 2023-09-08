@@ -6,13 +6,10 @@ import { getProjects } from '@/sanity/schemas/display'
 export default async function Home() {
   const projects= await getProjects();
   return (<div>
-    {projects.map((project)=>{
-      return <div>{project.name}</div>
-    })}
-    <div>The landing page</div>
-  </div>
- 
-  )}
+    {projects.map((project)=>(
+      <div key={project._id}>{project.title}</div>
+    ))}
+  </div>)}
 
 // export async function getStaticPaths(){
 
