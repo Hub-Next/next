@@ -1,7 +1,7 @@
 
 import {defineConfig} from 'sanity'
 import {deskTool} from 'sanity/desk'
-import project from '@/sanity/schemas/schema'
+import project from './sanity/schemas/schema'
 // import {visionTool} from '@sanity/vision'
 // import {schemaTypes} from './schemas'
 
